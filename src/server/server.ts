@@ -6,7 +6,7 @@ import cors from "cors"
 import "../db/mongo.js"
 const app: Application = express();
 const PORT: number = Number(process.env.PORT) || 5000;
-import errorMiddleware from "../middleware/errorHandler.js";
+import errorMiddleware from "../middleware/errorHandler.js"; 
 import swRouter from "../utils/swagger.js";
 import * as path from 'path';
 app.use(express.json());
